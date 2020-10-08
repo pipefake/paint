@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onDragDetected="#crearCuadrada" prefHeight="635.0" prefWidth="1186.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladorInterfaz.FXMLDocumentController">
+    <children>
+      <Canvas fx:id="canvas" height="544.0" layoutX="297.0" layoutY="71.0" onMouseClicked="#creaCirculo" onMouseDragged="#crearCamino" width="849.0" />
+      <Button ellipsisString="" layoutX="21.0" layoutY="325.0" mnemonicParsing="false" onAction="#crearHexagono" prefHeight="57.0" prefWidth="74.0">
+         <graphic>
+            <ImageView fitHeight="82.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/btn-04.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="31.0" layoutY="535.0" mnemonicParsing="false" onAction="#guardar" prefHeight="25.0" prefWidth="133.0" text="Guardar" />
+      <Button layoutX="21.0" layoutY="128.0" mnemonicParsing="false" onAction="#crearCuadrado" prefHeight="93.0" prefWidth="101.0" underline="true">
+         <graphic>
+            <ImageView fx:id="imagenCuadro" disable="true" fitHeight="81.0" fitWidth="86.0" onMouseClicked="#crearcuadradito" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/btn-06.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="21.0" layoutY="227.0" mnemonicParsing="false" onAction="#crearPentagono" prefHeight="93.0" prefWidth="101.0">
+         <graphic>
+            <ImageView fitHeight="103.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/btn-05.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <MenuBar fx:id="menubar" layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#guardarArchivo" text="Guardar Archivo" />
+                  <MenuItem mnemonicParsing="false" onAction="#leerArchivo" text="Leer Archivo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#eliminar" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="21.0" layoutY="414.0" mnemonicParsing="false" onAction="#crearOctogono" prefHeight="99.0" prefWidth="101.0">
+         <graphic>
+            <ImageView fitHeight="84.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/btn-03.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="140.0" layoutY="128.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="90.0">
+         <graphic>
+            <ImageView fitHeight="99.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/btn-07.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="140.0" layoutY="325.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="94.0">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/btn-09.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="140.0" layoutY="227.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="101.0">
+         <graphic>
+            <ImageView fitHeight="86.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/btn-08.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ColorPicker fx:id="colorpicker" layoutX="24.0" layoutY="59.0" onAction="#changecolor" />
+      <ColorPicker fx:id="colorpicker2" layoutX="24.0" layoutY="96.0" onAction="#changecolor2" />
+      <Button layoutX="148.0" layoutY="488.0" mnemonicParsing="false" onAction="#save" text="Button" />
+    </children>
+</AnchorPane>

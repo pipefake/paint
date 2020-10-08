@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<figurasgeometricas>
+  <figurageometrica nombre="cuadrado">
+    <punto1 x="94.0" y="194.0" />
+    <punto2 x="244.0" y="294.0" />
+    <punto3 x="94.0" y="394.0" />
+    <punto4 x="-56.0" y="294.0" />
+  </figurageometrica>
+  <figurageometrica nombre="Hexagono">
+    <punto1 x="258.0" y="455.0" />
+    <punto2 x="458.0" y="455.0" />
+    <punto3 x="508.0" y="555.0" />
+    <punto4 x="458.0" y="655.0" />
+    <punto5 x="258.0" y="655.0" />
+    <punto6 x="208.0" y="555.0" />
+  </figurageometrica>
+</figurasgeometricas>
